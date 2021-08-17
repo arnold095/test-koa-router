@@ -1,0 +1,28 @@
+{
+  "name": "test-koa-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:inversify": "nodemon --exec ts-node -T -r tsconfig-paths/register src/Inversify/Server.ts -e ts",
+    "dev:node-dependency-injection": "nodemon --exec ts-node -T -r tsconfig-paths/register src/NodeDependencyInjection/Server.ts -e ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.0",
+    "decorator-koa-router": "^1.0.8",
+    "inversify": "^5.1.1",
+    "koa": "^2.13.1",
+    "node-dependency-injection": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa__router": "^8.0.7",
+    "@types/node": "^16.6.1",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.0",
+    "tsconfig-paths": "^3.10.1"
+  }
+}
